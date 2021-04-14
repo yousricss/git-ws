@@ -1,0 +1,91 @@
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/ASUS/Desktop/learn-git-again/.git/
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git add third.txt
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git commit -m"adding third.txt"
+[master (root-commit) 78d3945] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git log
+commit 78d3945290ca6648e3fcdaaf1e0f6e47aaac137d (HEAD -> master)
+Author: yousricss <yousri_bahloul@yahoo.fr>
+Date:   Wed Apr 14 11:00:21 2021 +0200
+
+    adding third.txt
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ touch fourth.txt
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git add fourth.txt
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git commit -m"adding fourth.txt"
+[master 84e9d91] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git rm third.txt
+rm 'third.txt'
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git add .
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git commit -m"removing third.txt"
+[master c795cc6] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git log
+commit c795cc6b5494cf6bcadf500cc2c138efa9dc109c (HEAD -> master)
+Author: yousricss <yousri_bahloul@yahoo.fr>
+Date:   Wed Apr 14 11:05:15 2021 +0200
+
+    removing third.txt
+
+commit 84e9d915a256d7fc095327cb38a9e61f30c3eb4f
+Author: yousricss <yousri_bahloul@yahoo.fr>
+Date:   Wed Apr 14 11:03:05 2021 +0200
+
+    adding fourth.txt
+
+commit 78d3945290ca6648e3fcdaaf1e0f6e47aaac137d
+Author: yousricss <yousri_bahloul@yahoo.fr>
+Date:   Wed Apr 14 11:00:21 2021 +0200
+
+    adding third.txt
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git config --global core.pager=cat
+error: invalid key: core.pager=cat
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git config --global core.pager cat
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git config --global --list
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+user.name=yousricss
+user.email=yousri_bahloul@yahoo.fr
+core.pager=cat
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$ git config--global
+git: 'config--global' is not a git command. See 'git --help'.
+
+ASUS@DESKTOP-1815MVC MINGW64 ~/Desktop/learn-git-again (master)
+$
